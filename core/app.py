@@ -90,7 +90,11 @@ if prompt:
             response = client.invoke_harness(
                 harnessArn=harness_arn.strip(),
                 runtimeSessionId=st.session_state.runtime_session_id,
-                # insert model details here
+                model={
+                    "bedrockModelConfig": {
+                        "modelId": "amazon.nova-pro-v1:0"
+                        }
+                    },
                 messages=[
                     {
                         "role": "user",
