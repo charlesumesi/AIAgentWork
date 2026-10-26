@@ -71,12 +71,6 @@ for message in st.session_state.messages:
 prompt = st.chat_input("Ask your AI assistant...")
 
 if prompt:
-#     if not harness_arn.strip():
-#         st.error(
-#             "Enter your deployed Harness ARN in the sidebar "
-#             "or set AGENTCORE_HARNESS_ARN."
-#         )
-#         st.stop()
 
     # Display and save the customer's message
     st.session_state.messages.append(
