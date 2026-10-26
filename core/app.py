@@ -18,7 +18,8 @@ env_path = ".env"
 load_dotenv(env_path)
 
 # AWS configuration
-AWS_REGION = os.environ.get("AWS_REGION")
+#AWS_REGION = os.environ.get("AWS_REGION")
+AWS_REGION = "eu-west-2"
 DEFAULT_HARNESS_ARN = os.environ.get("DEFAULT_HARNESS_ARN")
 
 # Create a reusable AWS client
