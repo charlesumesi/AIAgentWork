@@ -2,8 +2,7 @@ import subprocess
 import sys
 
 subprocess.check_call([
-    sys.executable, "-m", "pip", "install",
-    "boto3", "dotenv-python"
+    sys.executable, "pip install -r requirements.txt"
 ])
 
 import os
