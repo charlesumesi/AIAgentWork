@@ -1,3 +1,11 @@
+import subprocess
+import sys
+
+subprocess.check_call([
+    sys.executable, "-m", "pip", "install",
+    "boto3", "dotenv-python"
+])
+
 import os
 import uuid
 import boto3
