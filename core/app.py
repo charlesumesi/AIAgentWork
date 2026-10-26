@@ -70,7 +70,7 @@ for message in st.session_state.messages:
 # Customer input
 prompt = st.chat_input("Ask your AI assistant...")
 
-# if prompt:
+if prompt:
 #     if not harness_arn.strip():
 #         st.error(
 #             "Enter your deployed Harness ARN in the sidebar "
