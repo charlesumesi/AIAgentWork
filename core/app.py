@@ -1,3 +1,7 @@
+!pip install boto3
+!pip install streamlit
+!pip install dotenv-python
+
 import os
 import uuid
 import boto3
