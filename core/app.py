@@ -18,7 +18,7 @@ env_path = ".env"
 load_dotenv(env_path)
 
 # AWS configuration
-AWS_REGION = os.environ.["AWS_REGION"]
+AWS_REGION = os.environ["AWS_REGION"]
 DEFAULT_HARNESS_ARN = os.environ["DEFAULT_HARNESS_ARN"]
 
 # AWS_REGION="eu-west-2"
