@@ -1,10 +1,3 @@
-import subprocess
-import sys
-
-subprocess.check_call([
-    sys.executable, "pip install -r requirements.txt"
-])
-
 import os
 import uuid
 import boto3
