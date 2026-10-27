@@ -85,7 +85,7 @@ if prompt:
                 runtimeSessionId=st.session_state.runtime_session_id,
                 model={
                     "bedrockModelConfig": {
-                        "modelId": "amazon.nova-pro-v1:0"
+                        "modelId": xxxxxxx
                         }
                     },
                 messages=[
