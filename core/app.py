@@ -85,12 +85,12 @@ if prompt:
                 runtimeSessionId=st.session_state.runtime_session_id,
                 model={
                     "bedrockModelConfig": {
-                        "modelId": "amazon.nova-pro-v1:0",
+                        "modelId": xxxxxx,
                         "apiFormat": "converse_stream",
                         "additionalParams": {
                             "guardrailConfig": {
                                 "guardrailIdentifier": (
-                                    "arn:aws:bedrock:eu-west-2:040829703525:guardrail/risigjr6g9it"
+                                    xxxxxxx
                                 ),
                                 "guardrailVersion": "1",
                                 "trace": "enabled_full",
