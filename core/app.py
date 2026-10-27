@@ -65,7 +65,6 @@ for message in st.session_state.messages:
 prompt = st.chat_input("Ask your AI assistant...")
 
 if prompt:
-
     # Display and save the customer's message
     st.session_state.messages.append(
         {"role": "user", "content": prompt}
@@ -77,6 +76,7 @@ if prompt:
     # Invoke the harness and display its streamed response
     with st.chat_message("assistant"):
         output = st.empty()
+        output.markdown = ("\U0001F4AD" + " Thinking...")
         answer = ""
 
         try:
@@ -85,7 +85,7 @@ if prompt:
                 runtimeSessionId=st.session_state.runtime_session_id,
                 model={
                     "bedrockModelConfig": {
-                        "modelId": xxxxxxx
+                        "modelId": "amazon.nova-pro-v1:0"
                         }
                     },
                 messages=[
