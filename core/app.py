@@ -112,8 +112,13 @@ if prompt:
                     ].get("message", "Unknown runtime error")
                     raise RuntimeError(error_message)
 
+            # After the streaming loop finishes
             if answer:
-                output.markdown("\U0001F4AD " + answer)
+                clean_answer = re.sub(
+                    r"<thinking>.*?</thinking>", "", answer,
+                    flags=re.DOTALL | re.IGNORECASE
+                ).strip()
+                output.markdown(clean_answer)
             else:
                 answer = (
                     "The harness returned no text. "
