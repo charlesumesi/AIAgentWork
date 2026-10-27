@@ -92,6 +92,7 @@ if prompt:
                                 "guardrailIdentifier": (
                                     "arn:aws:bedrock:eu-west-2:040829703525:guardrail/j3ha4pogu5cq"
                                 ),
+                                "guardrailVersion": "1",
                                 "trace": "enabled_full",
                             }
                         },
