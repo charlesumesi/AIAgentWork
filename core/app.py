@@ -113,7 +113,7 @@ if prompt:
                     raise RuntimeError(error_message)
 
             if answer:
-                output.markdown(answer)
+                output.markdown("\U0001F4AD " + answer)
             else:
                 answer = (
                     "The harness returned no text. "
