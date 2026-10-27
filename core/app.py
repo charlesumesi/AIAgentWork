@@ -29,6 +29,8 @@ DEFAULT_HARNESS_ARN = st.secrets["DEFAULT_HARNESS_ARN"]
 def get_bedrock_client(region):
     return boto3.client(
         "bedrock-agentcore",
+        AWS_access_key=st.secrets["AWS_access_key"],
+        AWS_secret_access_key=st.secrets["AWS_secret_access_key"]
         region_name=region,
     )
 
