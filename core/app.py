@@ -18,11 +18,11 @@ st.caption("Chat with your deployed AI agent")
 # load_dotenv(env_path)
 
 # AWS configuration
-# AWS_REGION = os.environ.get("AWS_REGION")
-# DEFAULT_HARNESS_ARN = os.environ.get("DEFAULT_HARNESS_ARN")
+AWS_REGION = st.secrets["AWS_REGION"]
+DEFAULT_HARNESS_ARN = st.secrets["DEFAULT_HARNESS_ARN"]
 
-AWS_REGION="eu-west-2"
-DEFAULT_HARNESS_ARN="arn:aws:bedrock-agentcore:eu-west-2:040829703525:harness/cuaws_aiagentgen-tBwj8mov39"
+# AWS_REGION="eu-west-2"
+# DEFAULT_HARNESS_ARN="arn:aws:bedrock-agentcore:eu-west-2:040829703525:harness/cuaws_aiagentgen-tBwj8mov39"
 
 # Create a reusable AWS client
 @st.cache_resource
