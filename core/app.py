@@ -104,7 +104,7 @@ if prompt:
 
                     if "text" in delta:
                         answer += delta["text"]
-                        output.markdown(answer + " ▌")
+                        output.markdown(answer + " \u258C")
 
                 elif "runtimeClientError" in event:
                     error_message = event[
