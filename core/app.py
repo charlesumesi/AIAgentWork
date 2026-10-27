@@ -45,11 +45,11 @@ if "runtime_session_id" not in st.session_state:
 with st.sidebar:
     st.header("Configuration")
 
-    # harness_arn = st.text_input(
-    #     "Harness ARN",
-    #     value=DEFAULT_HARNESS_ARN,
-    #     help="Paste the ARN of your deployed AgentCore Harness.",
-    # )
+    harness_arn = st.text_input(
+        "Harness ARN",
+        value=DEFAULT_HARNESS_ARN,
+        help="Paste the ARN of your deployed AgentCore Harness.",
+    )
 
     harness_arn = DEFAULT_HARNESS_ARN
 
