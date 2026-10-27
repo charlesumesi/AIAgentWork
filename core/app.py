@@ -3,7 +3,6 @@ import uuid
 import boto3
 import streamlit as st
 from botocore.exceptions import BotoCoreError, ClientError
-# from dotenv import load_dotenv
 
 st.set_page_config(
     page_title="CU AI Agent",
@@ -13,16 +12,9 @@ st.set_page_config(
 st.title("CU AI Agent")
 st.caption("Chat with your deployed AI agent")
 
-# Load environment variables (AWS_REGION, DEFAULT_HARNESS_ARN) from a .env file located on the local system
-# env_path = ".env"
-# load_dotenv(env_path)
-
 # AWS configuration
 AWS_REGION = st.secrets["AWS_REGION"]
 DEFAULT_HARNESS_ARN = st.secrets["AGENTCORE_HARNESS_ARN"]
-
-# AWS_REGION="eu-west-2"
-# DEFAULT_HARNESS_ARN="arn:aws:bedrock-agentcore:eu-west-2:040829703525:harness/cuaws_aiagentgen-tBwj8mov39"
 
 # Create a reusable AWS client
 @st.cache_resource
