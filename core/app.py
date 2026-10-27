@@ -86,8 +86,19 @@ if prompt:
                 model={
                     "bedrockModelConfig": {
                         "modelId": "amazon.nova-pro-v1:0"
-                        }
-                    },
+                        "apiFormat": "converse_stream",
+                        "additionalParams": {
+                            "guardrailConfig": {
+                                "guardrailIdentifier": (
+                                    "arn:aws:bedrock:eu-west-2:040829703525:guardrail/j3ha4pogu5cq"
+                                ),
+                                "guardrailVersion": "1",
+                                "trace": "enabled_full",
+                            }
+                        },
+                    }
+                },
+                
                 messages=[
                     {
                         "role": "user",
