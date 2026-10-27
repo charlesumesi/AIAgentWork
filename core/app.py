@@ -90,7 +90,7 @@ if prompt:
                         "additionalParams": {
                             "guardrailConfig": {
                                 "guardrailIdentifier": (
-                                    "arn:aws:bedrock:eu-west-2:040829703525:guardrail/j3ha4pogu5cq"
+                                    "arn:aws:bedrock:eu-west-2:040829703525:guardrail/risigjr6g9it"
                                 ),
                                 "guardrailVersion": "1",
                                 "trace": "enabled_full",
