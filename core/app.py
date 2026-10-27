@@ -76,7 +76,7 @@ if prompt:
     # Invoke the harness and display its streamed response
     with st.chat_message("assistant"):
         output = st.empty()
-        #output.markdown = ("\U0001F4AD" + " Thinking...")
+        #output.markdown("\U0001F4AD" + " Thinking...")
         answer = ""
 
         try:
